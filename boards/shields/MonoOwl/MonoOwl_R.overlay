@@ -19,10 +19,15 @@
 
 &trackball_listener_L {
     status = "okay";
-	input-processors = <&zip_zxy>;
 };
 
 &i2c1 {
+	status = "okay";
+	compatible = "nordic,nrf-twim";
+	pinctrl-0 = <&i2c1_default>;
+	pinctrl-1 = <&i2c1_sleep>;
+	pinctrl-names = "default", "sleep";
+
 	trackball_R: trackball_R@0 {
 		compatible = "pixart,pat912x";
 		reg = <0x79>;
