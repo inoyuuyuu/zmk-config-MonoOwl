@@ -32,6 +32,11 @@
 
 &trackball_split_L {
     device = <&trackball_L>;
+	 input-processors =
+            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
+            <&zip_scroll_scaler 1 5>,
+            <&zip_xy_to_scroll_mapper>,
+            <&zip_report_rate_limit 8>, <&zip_xyz>;
 };
 
 &i2c0 {

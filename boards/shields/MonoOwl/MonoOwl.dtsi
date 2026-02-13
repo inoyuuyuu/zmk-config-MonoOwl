@@ -32,11 +32,6 @@ split_inputs {
       compatible = "zmk,input-listener";
       status = "disabled";
       device = <&trackball_split_L>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_scroll_scaler 1 5>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_xyz>;
     };
 
     trackball_listener_R: trackball_listener_R {
