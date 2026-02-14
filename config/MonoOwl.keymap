@@ -2,33 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    flavor = "balanced";
-    quick-tap-ms = <0>;
-};
-
-/ {
-    combos { compatible = "zmk,combos"; };
-
-    macros {
-        to_layer_0: to_layer_0 {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
-        };
-    };
-
-    lt_to_layer_0: lt_to_layer_0 {
-        compatible = "zmk,behavior-hold-tap";
-        label = "LAYER_TAP_TO_0";
-        bindings = <&mo>, <&to_layer_0>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-    };
-};
-
 / {
     behaviors {
     };
@@ -41,7 +14,7 @@
 &kp ESC    &kp Q     &kp W     &kp E      &kp R            &kp T          &kp Y        &kp U      &kp I      &kp O      &kp P      &kp BSPC
 &kp TAB    &kp A     &kp S     &kp D      &kp F            &kp G          &kp H        &kp J      &kp K      &kp L      &kp SEMI   &kp APOS
 &kp LSHFT  &kp Z     &kp X     &kp C      &kp V            &kp B          &kp N        &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp ENTER
-&kp LCTRL  &kp LGUI  &kp LALT  &kp GRAVE  &lt 2 BACKSLASH  &lt 3 SPACE    &lt 1 SPACE  &kp RSHFT  &kp MINUS  &kp EQUAL  &kp RSHFT  &kp RCTRL
+&kp LCTRL  &kp LGUI  &kp LALT  &kp GRAVE  &lt 2 BACKSLASH  &lt 3 SPACE    &lt 1 SPACE  &kp RALT  &kp MINUS  &kp EQUAL  &kp RSHFT  &kp RCTRL
             >;
         };
 
