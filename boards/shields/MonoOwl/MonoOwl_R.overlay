@@ -45,7 +45,7 @@
 	pinctrl-1 = <&i2c1_sleep>;
 	pinctrl-names = "default", "sleep";
 
-	trackball_R: trackball_R@0 {
+	trackball_R: trackball_R@79 {
 		compatible = "pixart,pat912x";
 		reg = <0x79>;
 		status = "okay";
