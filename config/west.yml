@@ -4,8 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: MeowCatpawkittie
       url-base: https://github.com/MeowCatpawkittie
-    - name: caksoylar
-      url-base: https://github.com/caksoylar
+    #- name: caksoylar
+    #  url-base: https://github.com/caksoylar
     - name: badjeff
       url-base: https://github.com/badjeff
   projects:
@@ -13,9 +13,9 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-rgbled-widget
-      remote: MeowCatpawkittie
-      revision: main
+    #- name: zmk-rgbled-widget
+    #  remote: MeowCatpawkittie
+    #  revision: main
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
       revision: main
