@@ -3,9 +3,6 @@ if SHIELD_MONOOWL_R
 config ZMK_KEYBOARD_NAME
     default "MonoOwl_R"
 
-config ZMK_SPLIT
-    default y
-
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 

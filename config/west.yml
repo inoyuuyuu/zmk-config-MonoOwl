@@ -19,8 +19,8 @@ manifest:
     - name: zmk-input-processor-xyz
       remote: badjeff
       revision: main
-    - name: zmk-rgbled-widget
-      remote: MeowCatpawkittie
-      revision: main
+    #- name: zmk-rgbled-widget
+    #  remote: MeowCatpawkittie
+    #  revision: main
   self:
     path: config
