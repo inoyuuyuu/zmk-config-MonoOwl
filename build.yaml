@@ -1,8 +1,8 @@
 include:
   - board: xiao_ble
-    shield: MonoOwl_R rgbled_adapter
+    shield: MonoOwl_R
     snippet: studio-rpc-usb-uart
   - board: xiao_ble
-    shield: MonoOwl_L rgbled_adapter
+    shield: MonoOwl_L
   - board: xiao_ble
     shield: settings_reset
