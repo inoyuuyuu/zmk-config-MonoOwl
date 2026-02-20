@@ -63,3 +63,10 @@
     status = "okay";
     device = <&trackball_R>;
 };
+/ {
+  aliases {
+    led-red = &led0;
+    led-green = &led1;
+    led-blue = &led2;
+  };
+};
