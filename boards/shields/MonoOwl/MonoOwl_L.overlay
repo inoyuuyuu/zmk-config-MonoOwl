@@ -54,3 +54,10 @@
 &trackball_split_L {
     device = <&trackball_L>;
 };
+/ {
+  aliases {
+    led-red = &led0;
+    led-green = &led1;
+    led-blue = &led2;
+  };
+};
