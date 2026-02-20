@@ -62,6 +62,12 @@
 &trackball_listener_R {
     status = "okay";
     device = <&trackball_R>;
+
+    /* Layer 1（= layer_1）だけ右トラボを遅くする＝狙撃モード */
+    sniper {
+        layers = <1>;
+        input-processors = <&zip_xy_scaler 1 4>;
+    };
 };
 / {
   aliases {
