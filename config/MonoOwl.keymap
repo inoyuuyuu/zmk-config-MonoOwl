@@ -18,9 +18,9 @@
 
         layer_1 {
             bindings = <
-&kp ESC   &trans  &trans  &trans  &trans  &kp K_VOLUME_UP      &trans    &trans    &trans    &trans  &trans  &trans
-&mkp MB5  &trans  &trans  &trans  &trans  &kp K_MUTE           &trans    &trans    &trans    &trans  &trans  &trans
-&mkp MB4  &trans  &trans  &trans  &trans  &kp K_VOLUME_DOWN    &trans    &trans    &trans    &trans  &trans  &trans
+&kp ESC   &trans  &trans  &trans  &trans  &kp C_VOLUME_UP      &trans    &trans    &trans    &trans  &trans  &trans
+&mkp MB5  &trans  &trans  &trans  &trans  &kp C_MUTE           &trans    &trans    &trans    &trans  &trans  &trans
+&mkp MB4  &trans  &trans  &trans  &trans  &kp C_VOLUME_DOWN    &trans    &trans    &trans    &trans  &trans  &trans
 &trans    &trans  &trans  &trans  &trans  &trans               &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans  &trans
             >;
         };
