@@ -54,7 +54,7 @@
 		res-y-cpi = <600>;
 		zephyr,axis-x = <INPUT_REL_X>;
 		zephyr,axis-y = <INPUT_REL_Y>;
-  	　  zephyr,deferred-init;
+		zephyr,deferred-init;
 	};
 };
 
