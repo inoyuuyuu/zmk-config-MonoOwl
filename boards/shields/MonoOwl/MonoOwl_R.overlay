@@ -62,7 +62,7 @@
     device = <&trackball_R>;
 
     /* 通常時：軽く間引く（安定用） */
-    input-processors = <&zip_report_rate_limit 12>;
+    input-processors = <&zip_report_rate_limit 20>;
 
     /* Layer 1：狙撃（あなたが決めた 3/4） */
     sniper {
