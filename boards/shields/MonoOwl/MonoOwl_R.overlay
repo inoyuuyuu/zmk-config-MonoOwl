@@ -68,7 +68,7 @@
     sniper {
         layers = <1>;
         input-processors =
-            <&zip_report_rate_limit 4>,  /* ←ここが「次の対策」 */
+            <&zip_report_rate_limit 20>,  /* ←ここが「次の対策」 */
             <&zip_xy_scaler 3 4>;
     };
 };
