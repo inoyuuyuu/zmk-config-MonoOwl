@@ -1,6 +1,6 @@
 manifest:
   remotes:
-    - name: zmkfirmware
+    - name: zmkfirmware 
       url-base: https://github.com/zmkfirmware
     - name: MeowCatpawkittie
       url-base: https://github.com/MeowCatpawkittie
@@ -8,32 +8,19 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: badjeff
       url-base: https://github.com/badjeff
-    - name: urob
-      url-base: https://github.com/urob
-
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: 354cff9
       import: app/west.yml
-
-    # --- これが長音キーの本体 ---
-    - name: zmk-unicode
-      remote: urob
-      revision: v0.3
-      path: modules/zmk-unicode
-
     - name: zmk-rgbled-widget
-      remote: caksoylar
+      remote: caksoylar 
       revision: v0.3
-
     - name: zmk-input-processor-report-rate-limit
       remote: badjeff
       revision: main
-
     - name: zmk-input-processor-xyz
       remote: badjeff
       revision: main
-
   self:
     path: config
