@@ -20,9 +20,10 @@ manifest:
       import: app/west.yml
 
     # ★ここを追加（2か所目・zmkの直下が重要）
-    - name: zmk-unicode
-      remote: urob
-      revision: v0.3
+- name: zmk-unicode
+  remote: urob
+  revision: main
+  path: modules/zmk-unicode
 
     - name: zmk-rgbled-widget
       remote: caksoylar 
