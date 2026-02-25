@@ -17,9 +17,10 @@ manifest:
       revision: 354cff9
       import: app/west.yml
 
+    # --- これが長音キーの本体 ---
     - name: zmk-unicode
       remote: urob
-      revision: main
+      revision: v0.3
       path: modules/zmk-unicode
 
     - name: zmk-rgbled-widget
