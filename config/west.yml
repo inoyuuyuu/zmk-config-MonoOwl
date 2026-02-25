@@ -8,11 +8,22 @@ manifest:
       url-base: https://github.com/caksoylar
     - name: badjeff
       url-base: https://github.com/badjeff
+
+    # ★ここを追加（1か所目）
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: 354cff9
       import: app/west.yml
+
+    # ★ここを追加（2か所目・zmkの直下が重要）
+    - name: zmk-unicode
+      remote: urob
+      revision: v0.3
+
     - name: zmk-rgbled-widget
       remote: caksoylar 
       revision: v0.3
@@ -22,5 +33,6 @@ manifest:
     - name: zmk-input-processor-xyz
       remote: badjeff
       revision: main
+
   self:
     path: config
